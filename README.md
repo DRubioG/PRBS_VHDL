@@ -9,3 +9,14 @@
 
 # Synthesis example
 ![xilinx_table](./img/image.png)
+
+# FW PRBS Options
+- NOT STANDARD
+- ITU-T O.150 PL9
+- ITU-T O.150 PL11
+- ITU-T O.150 PL15
+- OIF-CEI-P-02.0
+- ITU-T O.150 PL20
+- ITU-T O.150 PL23
+- ITU-T O.150 PL29
+- ITU-T O.150 PL31 / OIF-CEI-02.0

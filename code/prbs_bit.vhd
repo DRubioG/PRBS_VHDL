@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity prbs_bit is 
     generic(
-        type_prbs : string := "ITU-T O.150 PL9"
+        type_prbs : string := "NOT STANDARD"
     );
     Port (
         clk : in std_logic;
@@ -18,12 +18,6 @@ architecture arch_prbs_bit of prbs_bit is
 signal d_xor : std_logic_vector(1 downto 0);
 
 begin
-
-    
-    
-    
-    
-    
     
 inst_NOT_STANDARD : if type_prbs = "NOT STANDARD" generate
         constant POLY_LENGTH : integer := 7;
@@ -45,9 +39,8 @@ inst_NOT_STANDARD : if type_prbs = "NOT STANDARD" generate
             end generate;
         end generate;
         
-        inst_xor : for i in 2 downto 0 generate
-            d_xor(0) <= d_out(POLY_LENGTH-1);
-            d_xor(1) <= d_out(POLY_LENGTH-1);
+        inst_xor : for i in 1 downto 0 generate
+            d_xor(i) <= d_out(POLY_LENGTH-1);
         end generate;
         
     
